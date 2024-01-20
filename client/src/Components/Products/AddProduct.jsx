@@ -32,7 +32,7 @@ const AddProduct = () => {
     if (title && price && image && category) {
       try {
         const token = JSON.parse(localStorage.getItem("myntraToken"));
-        const response = await axios.post("http://localhost:8000/addproduct", {
+        const response = await api.post("/addproduct", {
           product,
           token,
         });

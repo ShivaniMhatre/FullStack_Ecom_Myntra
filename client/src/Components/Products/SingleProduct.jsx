@@ -25,8 +25,8 @@ const SingleProduct = () => {
   useEffect(() => {
     async function singleProduct() {
       try {
-        const response = await axios.post(
-          "http://localhost:8000/singleproduct",
+        const response = await api.post(
+          "/singleproduct",
           { productId }
         );
 

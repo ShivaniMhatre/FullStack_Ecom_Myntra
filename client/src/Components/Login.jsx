@@ -26,7 +26,7 @@ const Login = () => {
 
     if (email && password) {
       try {
-        const response = await axios.post("https://shivani-myntra-clone.onrender.com", {
+        const response = await api.post("/login", {
           loginInput,
         });
 

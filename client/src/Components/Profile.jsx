@@ -7,6 +7,7 @@ import { MyntraContext } from "./Context/MyContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import api from "./Config/APIConfig";
 
 const Profile = () => {
   const [profileModal, setProfileModal] = useState(false);
@@ -34,7 +35,7 @@ const Profile = () => {
     if (name && password && confirmPassword) {
       if (password === confirmPassword) {
         const token = JSON.parse(localStorage.getItem("myntraToken"));
-        const response = await axios.post("http://localhost:8000/editprofile", {
+        const response = await api.post("/editprofile", {
           token,
           prevValue,
         });

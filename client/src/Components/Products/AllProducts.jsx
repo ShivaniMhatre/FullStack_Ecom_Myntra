@@ -13,7 +13,7 @@ const AllProducts = () => {
   useEffect(() => {
     async function allProducts() {
       try {
-        const response = await axios.get("http://localhost:8000/getproducts");
+        const response = await api.get("/getproducts");
 
         if (response.data.success) {
           setAllProducts(response.data.allProducts);

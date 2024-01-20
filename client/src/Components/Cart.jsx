@@ -6,6 +6,7 @@ import { MyntraContext } from "./Context/MyContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import api from "./Config/APIConfig";
 
 const Cart = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -24,8 +25,8 @@ const Cart = () => {
     async function getCartProucts() {
       try {
         const token = JSON.parse(localStorage.getItem("myntraToken"));
-        const response = await axios.post(
-          "http://localhost:8000/get-cart-products",
+        const response = await api.post(
+          "/get-cart-products",
           { token }
         );
 

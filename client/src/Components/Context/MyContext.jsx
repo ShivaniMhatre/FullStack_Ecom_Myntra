@@ -1,4 +1,5 @@
 import axios from "axios";
+import api from '../Config/APIConfig.js'
 import React, { createContext, useEffect, useReducer } from "react";
 
 export const MyntraContext = createContext();
@@ -47,7 +48,7 @@ const MyContext = ({ children }) => {
       const token = JSON.parse(localStorage.getItem("myntraToken"));
 
       try {
-        const response = await axios.post("http://localhost:8000/currentuser", {
+        const response = await api.post("/currentuser", {
           token,
         });
 

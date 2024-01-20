@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { MyntraContext } from "./Context/MyContext";
+import api from "./Config/APIConfig";
 
 const Register = () => {
   const [myntraReg, setMyntraReg] = useState({
@@ -38,7 +39,7 @@ const Register = () => {
     if (name && email && password && confirmPassword && role) {
       if (password === confirmPassword) {
         try {
-          const response = await axios.post("https://shivani-myntra-clone.onrender.com", {
+          const response = await api.post("/register", {
             myntraReg,
           });
 

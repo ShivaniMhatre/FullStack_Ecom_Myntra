@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Navbar from "../Navbar";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
+import api from "../Config/APIConfig";
 
 const UpdateProduct = () => {
   const [productData, setproductData] = useState({});
@@ -21,8 +22,8 @@ const UpdateProduct = () => {
       try {
         const token = JSON.parse(localStorage.getItem("myntraToken"));
 
-        const response = await axios.post(
-          "http://localhost:8000/geteditproduct",
+        const response = await api.post(
+          "/geteditproduct",
           { productId, token }
         );
 
