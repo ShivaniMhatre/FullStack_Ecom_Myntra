@@ -1,0 +1,49 @@
+.addProductContainer {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+
+.addProductSection {
+  width: 40%;
+  height: 65%;
+  background-image: linear-gradient(green, yellow);
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  border-radius: 5px;
+}
+.addProductSection > form > div {
+  width: 80%;
+  margin: 8% auto;
+}
+.addProductSection > form > div > input {
+  width: 100%;
+  height: 35px;
+  padding-left: 2%;
+  font-weight: bolder;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1em;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.addProductSection > form > div > input::placeholder {
+  color: white;
+}
+.addProductSection > form > div > input[type="submit"] {
+  color: black;
+  border: 2px solid black;
+}
+.addProductSection > form > div > select {
+  width: 100%;
+  height: 35px;
+  padding-left: 2%;
+  font-weight: bolder;
+  background-color: transparent;
+  border: 2px solid black;
+}
+.addProductSection > form > div > select > option {
+  background-color: greenyellow;
+}

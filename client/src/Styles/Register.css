@@ -1,0 +1,150 @@
+#register-body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5.1%;
+  /* border: 1px solid black; */
+  background-color: #ececec;
+}
+
+#registration-form {
+  width: 60%;
+  /* border: 1px solid red; */
+  margin: auto;
+  height: 95%;
+  display: flex;
+  margin-top: 15px;
+}
+
+#left-reg {
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+#left-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#left-img > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  opacity: 0.5;
+  height: 610px;
+}
+#right-reg {
+  width: 40%;
+  /* border: 1px solid blue; */
+  background-color: white;
+}
+
+#main-form {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid green; */
+  height: 610px;
+  padding-top: 20px;
+}
+
+.input-details > input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(213, 207, 207);
+  width: 100%;
+  padding-bottom: 10px;
+  color: rgb(179, 176, 176);
+  margin: 7px 0;
+  color: rgb(32, 32, 32);
+  /* font-weight: bold; */
+}
+.input-details > select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(213, 207, 207);
+  width: 100%;
+  padding-bottom: 10px;
+  color: rgb(179, 176, 176);
+  margin: 7px 0;
+  color: rgb(32, 32, 32);
+  /* font-weight: bold; */
+}
+
+.input-details > input::placeholder {
+  color: grey;
+  opacity: 0.8;
+}
+
+.input-details > input:focus {
+  outline: none;
+}
+
+.input-details {
+  margin-top: 25px;
+}
+/* 
+  .input-details > label {
+    font-weight: bold;
+  } */
+
+.input-checkbox {
+  width: 100%;
+  height: 30px;
+  /* background-color: yellow; */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.input-checkbox > input {
+  width: 15px;
+  height: 15px;
+}
+
+.input-checkbox > p {
+  font-size: 0.8em;
+  padding-left: 5px;
+}
+.input-checkbox > p > b {
+  color: rgb(247, 116, 137);
+}
+
+/*  */
+#sign-up {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+#sign-up > div > button {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ff3e6c;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+#sign-up > div > button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#sign-up > div:nth-child(2) {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+#sign-up > div:nth-child(2) > p > a {
+  color: grey;
+}
+
+#sign-up > div:nth-child(2) > p > a > span {
+  color: #ff3e6c;
+  font-weight: bold;
+  font-size: 1.1em;
+}
