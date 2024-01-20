@@ -6,6 +6,7 @@ import { MyntraContext } from "../Context/MyContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import api from "../Config/APIConfig";
 
 const SingleProduct = () => {
   const [singleProd, setSingleProd] = useState({

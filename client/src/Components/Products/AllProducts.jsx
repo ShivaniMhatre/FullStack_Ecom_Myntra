@@ -4,6 +4,7 @@ import "../../Styles/AllProducts.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import loader from "../../Assets/gifs/loader.gif";
+import api from "../Config/APIConfig";
 
 const AllProducts = () => {
   const [allproducts, setAllProducts] = useState([]);
