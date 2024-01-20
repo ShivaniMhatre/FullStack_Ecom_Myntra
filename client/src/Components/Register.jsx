@@ -38,7 +38,7 @@ const Register = () => {
     if (name && email && password && confirmPassword && role) {
       if (password === confirmPassword) {
         try {
-          const response = await axios.post("http://localhost:8000/register", {
+          const response = await axios.post("https://shivani-myntra-clone.onrender.com", {
             myntraReg,
           });
 

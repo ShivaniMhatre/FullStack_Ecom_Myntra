@@ -1,7 +1,4 @@
 
-
-/* ----------------------dropdown */
-
 #drop-down {
   z-index: 9999;
   width: 80%;
@@ -40,7 +37,6 @@
   cursor: pointer;
 }
 
-/* ----------------------------------- */
 
 #navigation > a:nth-child(6) {
   padding-top: 27px;
@@ -79,7 +75,6 @@
 }
 
 #profile {
-  /* border: 1px solid green; */
   width: 12%;
   display: flex;
   justify-content: space-around;
@@ -92,7 +87,11 @@
   color: black;
 }
 
-/* dropdown profile================= */
+
+
+
+
+
 #dropdown-prof {
   /* border: 1px solid green; */
   z-index: 9999;
@@ -137,7 +136,7 @@
 
 #dropdown-prof h3 {
   font-size: 0.9em;
-} */
+} 
 
 
 
@@ -176,7 +175,6 @@
 #logo {
   width: 6%;
   height: 60%;
-  /* border: 1px solid red; */
 }
 
 #logo>div {
@@ -193,7 +191,6 @@
 #navi {
   width: 42%;
   height: 60%;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -209,7 +206,6 @@
 #search {
   width: 33%;
   height: 60%;
-  /* border: 1px solid red; */
   position: relative;
   display: flex;
   align-items: center;
@@ -234,7 +230,6 @@
 #nav_profile {
   width: 15%;
   height: 60%;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -248,27 +243,22 @@
   width: 20%;
   height: 100%;
   position: relative;
-  /* border: 1px solid red; */
 }
 
 #wish {
   width: 20%;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 #cart {
   width: 20%;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
-/* DropDown */
+
 #profile_dropdown {
   width: 25%;
-  /* height: 67vh; */
   background-color: white;
-  /* border: 1px solid black; */
   position: absolute;
   top: 65px;
   left: 72%;
@@ -277,15 +267,12 @@
 
 #inner_dropdown {
   width: 90%;
-  /* height: 90%; */
   margin: auto;
   margin-top: 20px;
-  /* border: 1px solid red; */
 }
 
 #top_div {
   width: 100%;
-  /* height: 15vh; */
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
@@ -297,7 +284,6 @@
   height: 5vh;
   border: 1px solid #ff3e6c;
   margin: 10px;
-  /* margin-top: 10px; */
   text-align: center;
   border-radius: 4px;
 }
@@ -305,7 +291,6 @@
 #signin>h4 {
   padding-top: 4px;
   color: #ff3e6c;
-  /* text-align: ; */
 }
 
 #middle_div {
@@ -323,7 +308,6 @@
 #bottom_div {
   width: 100%;
   height: 22vh;
-  /* border-bottom: 1px solid black; */
   padding-top: 10px;
 }
 
