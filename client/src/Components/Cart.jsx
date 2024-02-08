@@ -55,8 +55,8 @@ const Cart = () => {
     try {
       const token = JSON.parse(localStorage.getItem("myntraToken"));
 
-      const response = await axios.post(
-        "http://localhost:8000/delete-cart-product",
+      const response = await api.post(
+        "/delete-cart-product",
         {
           productId,
           token,
@@ -76,7 +76,7 @@ const Cart = () => {
     try {
       const token = JSON.parse(localStorage.getItem("myntraToken"));
 
-      const response = await axios.post("http://localhost:8000/buyproduct", {
+      const response = await api.post("/buyproduct", {
         token,
       });
 
