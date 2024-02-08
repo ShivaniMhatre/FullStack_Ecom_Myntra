@@ -42,7 +42,7 @@
 #left-singleProd > div > img {
   width: 100%;
   height: 100%;
-  border: 1px solid whitesmoke;
+  /* border: 1px solid whitesmoke; */
 }
 #left-singleProd > div > img:hover {
   transform: scale(1.2);

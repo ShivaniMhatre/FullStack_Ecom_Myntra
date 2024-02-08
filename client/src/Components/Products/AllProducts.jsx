@@ -2,14 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../Navbar";
 import "../../Styles/AllProducts.css";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import loader from "../../Assets/gifs/loader.gif";
 import api from "../Config/APIConfig";
 
 const AllProducts = () => {
   const [allproducts, setAllProducts] = useState([]);
   const route = useNavigate();
-  // console.log(allproducts);
+  
 
   useEffect(() => {
     async function allProducts() {
@@ -31,7 +30,7 @@ const AllProducts = () => {
     const { value } = e.target;
 
     try {
-      const response = await axios.get("http://localhost:8000/getproducts");
+      const response = await api.get("/getproducts");
 
       const getAllProduct = response.data.allProducts;
 
@@ -68,6 +67,9 @@ const AllProducts = () => {
     }
   };
 
+  
+
+  
   return (
     <>
       <Navbar />
@@ -277,7 +279,9 @@ const AllProducts = () => {
                 ))}
                 <div id="pages">
                   <div id="child-page">
-                    <div>Page 1 of 2109</div>
+                    <div>
+                      <button>Previous</button>
+                    </div>
                     <div>
                       <button>1</button>
                       <button>2</button>

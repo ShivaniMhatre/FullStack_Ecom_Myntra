@@ -45,7 +45,7 @@ const SingleProduct = () => {
   const addToCart = async (productId) => {
     try {
       const token = JSON.parse(localStorage.getItem("myntraToken"));
-      const response = await axios.post("http://localhost:8000/add-to-cart", {
+      const response = await api.post("/add-to-cart", {
         productId,
         token,
       });
@@ -411,28 +411,20 @@ const SingleProduct = () => {
 
                 <div id="flex-img">
                   <div id="customer-img">
-                    <img
+                    {/* <img
                       src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
                       alt=""
-                    />
+                    /> */}
+                    <img src={singleProd.image} />
                   </div>
                   <div id="customer-img">
-                    <img
-                      src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
-                      alt=""
-                    />
+                    <img src={singleProd.image} />
                   </div>
                   <div id="customer-img">
-                    <img
-                      src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
-                      alt=""
-                    />
+                    <img src={singleProd.image} />
                   </div>
                   <div id="customer-img">
-                    <img
-                      src="https://assets.myntassets.com/h_150,q_75,w_150,c_thumb,fl_progressive/assets/images/2021/10/15/d6094e0b-4de1-4f25-b44c-a97d5df22e621634283820881-IMG_20211012_001913-01.jpeg"
-                      alt=""
-                    />
+                    <img src={singleProd.image} />
                   </div>
                 </div>
                 <h4>Customer Reviews (341)</h4>
