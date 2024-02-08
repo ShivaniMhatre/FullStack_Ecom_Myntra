@@ -91,17 +91,19 @@ const ProfileDropDown = () => {
             </div>
           ) : null}
           {state?.currentuser?.role === 'Buyer' ? (
-            <div
-              style={{
-                cursor: "pointer",
-                backgroundColor: "green",
-                width: "55%",
-                marginTop: "1%",
-                textAlign: "center",
-                color: "white",
-              }}
-            >
-              <h4 onClick={() => route("/myproducts")}>My Products</h4>
+            <div>
+              <div
+                style={{
+                  cursor: "pointer",
+                  backgroundColor: "green",
+                  width: "55%",
+                  marginTop: "1%",
+                  textAlign: "center",
+                  color: "white",
+                }}
+              >
+                <h4 onClick={() => route("/myproducts")}>My Products</h4>
+              </div>
             </div>
           ) : null}
           <p>Orders</p>
