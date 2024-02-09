@@ -55,7 +55,7 @@ const Cart = () => {
     try {
       const token = JSON.parse(localStorage.getItem("myntraToken"));
 
-      const response = await api.delete(
+      const response = await api.post(
         "/delete-cart-product",
         {
           productId,

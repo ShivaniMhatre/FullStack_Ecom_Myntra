@@ -73,7 +73,7 @@ app.post("/singleproduct", SingleProduct);
 app.post("/ownproducts", productMiddleWare, OwnProducts);
 app.post("/geteditproduct", productMiddleWare, GetEditProduct);
 app.patch("/updateproduct", productMiddleWare, UpdateProduct);
-app.delete("/delete-product", productMiddleWare, DeleteProduct);
+app.post("/delete-product", productMiddleWare, DeleteProduct);
 
 app.post("/add-to-cart", addtocart);
 app.post("/get-cart-products", getCartProducts);
