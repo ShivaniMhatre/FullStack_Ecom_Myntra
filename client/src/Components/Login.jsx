@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   const handleLoginSubmit = async (e) => {
-    alert('hi')
+    // alert('hi')
     e.preventDefault();
     const { email, password } = loginInput;
 
