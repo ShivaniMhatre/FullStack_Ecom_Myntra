@@ -90,7 +90,7 @@ const ProfileDropDown = () => {
               </div>
             </div>
           ) : null}
-          {state?.currentuser?.role === 'Buyer' ? (
+          {/* {state?.currentuser?.role === 'Buyer' ? (
             <div>
               <div
                 style={{
@@ -105,7 +105,7 @@ const ProfileDropDown = () => {
                 <h4 onClick={() => route("/myproducts")}>My Products</h4>
               </div>
             </div>
-          ) : null}
+          ) : null} */}
           <p>Orders</p>
           <p>Wishlists</p>
           <p>Gift Cards</p>
